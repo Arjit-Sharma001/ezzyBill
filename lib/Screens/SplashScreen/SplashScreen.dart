@@ -16,11 +16,11 @@ class _SplashScreen extends State<SplashScreen> {
   // Method for change screen
   void changeScreen() {
     Future.delayed(const Duration(seconds: 3), () {
-      // if (auth.currentUser == null) {
-      Get.off(() => LoginScreen());
-      // } else {
-      //   Get.off(() => Home());
-      // }
+      if (auth.currentUser == null) {
+        Get.off(() => LoginScreen());
+      } else {
+        Get.off(() => Home());
+      }
     });
   }
 

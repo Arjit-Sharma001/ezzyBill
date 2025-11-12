@@ -37,7 +37,7 @@ class _ItemEditScreenState extends State<ItemEditScreen> {
     final base64Image = base64Encode(await imageFile.readAsBytes());
     final response = await http.put(
       Uri.parse(
-          'https://api.github.com/repos/Arjit-Sharma001/ezzyBill_fs/contents/assets/images/$name'),
+          'https://api.github.com/repos/Arjit-Sharma001/ezzyBill/contents/assets/images/$name'),
       headers: {
         'Authorization': 'Bearer ',
         'Accept': 'application/vnd.github+json',
