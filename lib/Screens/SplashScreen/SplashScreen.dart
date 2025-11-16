@@ -17,7 +17,7 @@ class _SplashScreen extends State<SplashScreen> {
   void changeScreen() {
     Future.delayed(const Duration(seconds: 3), () {
       if (auth.currentUser == null) {
-        Get.off(() => LoginScreen());
+        // Get.off(() => LoginScreen());
       } else {
         Get.off(() => Home());
       }
